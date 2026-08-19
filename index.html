@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Prince | Web Developer | Websites Starting at ₹999</title>
+<title>Prince | Web Developer | Websites Starting at ₹2,999</title>
 
 <meta name="description"
-content="Prince builds modern, responsive and professional websites for businesses, creators and individuals. Website packages starting at ₹999.">
+content="Prince builds modern, responsive and professional websites for businesses, creators and individuals. Website packages starting at ₹2,999.">
 
 <meta name="keywords"
 content="web developer, website developer, freelance web developer, website design, business website, portfolio website, landing page, Prince">
@@ -16,6 +18,7 @@ content="web developer, website developer, freelance web developer, website desi
 <meta name="author" content="Prince">
 
 <meta name="theme-color" content="#05d9ff">
+
 
 <style>
 
@@ -69,12 +72,15 @@ img {
 ========================================================= */
 
 :root {
+
     --bg: #050505;
     --bg2: #090909;
+
     --card: #101010;
     --card2: #141414;
 
     --white: #ffffff;
+
     --muted: #a5a5a5;
     --muted2: #747474;
 
@@ -93,67 +99,95 @@ img {
    GLOBAL
 ========================================================= */
 
-body::selection {
+::selection {
     background: var(--cyan);
     color: #000;
 }
 
 .container {
+
     width: min(var(--container), 90%);
+
     margin: auto;
 }
 
 section {
+
     padding: 120px 0;
+
     position: relative;
 }
 
 .section-label {
+
     color: var(--cyan);
+
     text-transform: uppercase;
+
     letter-spacing: 4px;
+
     font-size: 13px;
+
     font-weight: 800;
+
     margin-bottom: 20px;
 }
 
 .section-title {
+
     font-size: clamp(42px, 5vw, 72px);
+
     line-height: 1.05;
+
     letter-spacing: -3px;
+
     margin-bottom: 25px;
+
     max-width: 850px;
 }
 
 .section-description {
+
     color: var(--muted);
+
     max-width: 720px;
+
     font-size: 18px;
+
     margin-bottom: 50px;
 }
 
 
 /* =========================================================
-   BACKGROUND GLOW
+   GLOW
 ========================================================= */
 
 .glow {
+
     position: absolute;
+
     width: 500px;
     height: 500px;
+
     background: var(--cyan);
+
     opacity: 0.07;
+
     filter: blur(130px);
+
     border-radius: 50%;
+
     pointer-events: none;
 }
 
 .glow-one {
+
     top: 0;
     right: -200px;
 }
 
 .glow-two {
+
     bottom: 0;
     left: -200px;
 }
@@ -164,79 +198,111 @@ section {
 ========================================================= */
 
 header {
+
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
+
     z-index: 1000;
 
     background: rgba(5,5,5,0.78);
+
     backdrop-filter: blur(18px);
 
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
 }
 
 .navbar {
+
     height: 78px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 .logo {
+
     font-size: 28px;
+
     font-weight: 900;
+
     letter-spacing: -1.5px;
 }
 
 .logo span {
+
     color: var(--cyan);
 }
 
 .nav-links {
+
     display: flex;
+
     align-items: center;
+
     gap: 35px;
+
     list-style: none;
 }
 
 .nav-links a {
+
     color: #d5d5d5;
+
     font-size: 15px;
+
     font-weight: 600;
+
     transition: 0.25s ease;
 }
 
 .nav-links a:hover {
+
     color: var(--cyan);
 }
 
 .nav-cta {
+
     padding: 10px 17px;
+
     border: 1px solid var(--cyan);
+
     border-radius: 10px;
+
     color: var(--cyan) !important;
 }
 
 .nav-cta:hover {
+
     background: var(--cyan);
+
     color: #000 !important;
 }
 
 .menu-btn {
+
     display: none;
 
     width: 43px;
     height: 43px;
 
     border: 1px solid var(--border);
+
     background: var(--card);
 
     color: white;
+
     border-radius: 10px;
 
     cursor: pointer;
+
     font-size: 20px;
 }
 
@@ -246,70 +312,93 @@ header {
 ========================================================= */
 
 .hero {
+
     min-height: 100vh;
 
     display: flex;
+
     align-items: center;
 
     padding-top: 100px;
+
     overflow: hidden;
 }
 
 .hero-grid {
+
     display: grid;
+
     grid-template-columns: 1.2fr 0.8fr;
+
     gap: 80px;
+
     align-items: center;
 }
 
 .availability {
+
     display: inline-flex;
+
     align-items: center;
+
     gap: 10px;
 
     color: var(--cyan);
 
-    border: 1px solid rgba(0,217,255,0.35);
-    background: rgba(0,217,255,0.05);
+    border:
+        1px solid rgba(0,217,255,0.35);
+
+    background:
+        rgba(0,217,255,0.05);
 
     padding: 10px 17px;
+
     border-radius: 100px;
 
     font-size: 13px;
+
     font-weight: 700;
 
     margin-bottom: 30px;
 }
 
 .status-dot {
+
     width: 8px;
     height: 8px;
 
     background: var(--cyan);
+
     border-radius: 50%;
 
-    box-shadow: 0 0 14px var(--cyan);
+    box-shadow:
+        0 0 14px var(--cyan);
 
     animation: pulse 1.8s infinite;
 }
 
 @keyframes pulse {
 
-    0%,
-    100% {
+    0%,100% {
+
         opacity: 1;
+
         transform: scale(1);
     }
 
     50% {
-        opacity: 0.45;
-        transform: scale(0.7);
+
+        opacity: .45;
+
+        transform: scale(.7);
     }
 }
 
 .hero h1 {
-    font-size: clamp(58px, 7vw, 105px);
-    line-height: 0.95;
+
+    font-size: clamp(58px,7vw,105px);
+
+    line-height: .95;
 
     letter-spacing: -6px;
 
@@ -317,75 +406,108 @@ header {
 }
 
 .hero h1 .highlight {
+
     color: var(--cyan);
 }
 
 .hero-description {
+
     max-width: 720px;
 
     color: #a8a8a8;
 
     font-size: 19px;
+
     line-height: 1.7;
 
     margin-bottom: 35px;
 }
 
 .hero-buttons {
+
     display: flex;
+
     gap: 14px;
+
     flex-wrap: wrap;
 }
 
 .btn {
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 9px;
 
     min-height: 52px;
+
     padding: 0 23px;
 
     border-radius: 11px;
 
     font-size: 15px;
+
     font-weight: 800;
 
-    transition: 0.25s ease;
+    transition: .25s ease;
 
     cursor: pointer;
 }
 
 .btn-primary {
+
     background: var(--cyan);
+
     color: #000;
 }
 
 .btn-primary:hover {
+
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0,217,255,0.25);
+
+    box-shadow:
+        0 12px 35px
+        rgba(0,217,255,0.25);
 }
 
 .btn-secondary {
-    border: 1px solid var(--border);
+
+    border:
+        1px solid var(--border);
+
     background: #0c0c0c;
+
     color: white;
 }
 
 .btn-secondary:hover {
+
     border-color: var(--cyan);
+
     color: var(--cyan);
+
     transform: translateY(-3px);
 }
 
 .btn-whatsapp {
-    border: 1px solid rgba(0,255,120,0.35);
+
+    border:
+        1px solid rgba(0,255,120,0.35);
+
     color: #64ff9a;
-    background: rgba(0,255,120,0.04);
+
+    background:
+        rgba(0,255,120,0.04);
 }
 
 .btn-whatsapp:hover {
-    background: rgba(0,255,120,0.1);
+
+    background:
+        rgba(0,255,120,0.1);
+
     transform: translateY(-3px);
 }
 
@@ -395,12 +517,16 @@ header {
 ========================================================= */
 
 .hero-image-wrapper {
+
     display: flex;
+
     justify-content: center;
+
     position: relative;
 }
 
 .hero-image-box {
+
     width: 390px;
     height: 390px;
 
@@ -419,10 +545,12 @@ header {
     box-shadow:
         0 0 80px rgba(0,217,255,0.12);
 
-    animation: float 5s ease-in-out infinite;
+    animation:
+        float 5s ease-in-out infinite;
 }
 
 .hero-image {
+
     width: 100%;
     height: 100%;
 
@@ -437,30 +565,35 @@ header {
 
 @keyframes float {
 
-    0%,
-    100% {
+    0%,100% {
+
         transform: translateY(0);
     }
 
     50% {
+
         transform: translateY(-12px);
     }
 }
 
 .image-ring {
+
     position: absolute;
 
     width: 430px;
     height: 430px;
 
-    border: 1px solid rgba(0,217,255,0.15);
+    border:
+        1px solid rgba(0,217,255,0.15);
 
     border-radius: 50%;
 
-    animation: rotate 15s linear infinite;
+    animation:
+        rotate 15s linear infinite;
 }
 
 @keyframes rotate {
+
     to {
         transform: rotate(360deg);
     }
@@ -468,32 +601,49 @@ header {
 
 
 /* =========================================================
-   TRUST STRIP
+   TRUST
 ========================================================= */
 
 .trust {
+
     padding: 25px 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
     background: #080808;
 }
 
 .trust-grid {
+
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap: 20px;
 }
 
 .trust-item {
+
     text-align: center;
+
     color: #bcbcbc;
+
     font-size: 14px;
 }
 
 .trust-item strong {
+
     display: block;
+
     color: white;
+
     font-size: 21px;
+
     margin-bottom: 2px;
 }
 
@@ -503,16 +653,23 @@ header {
 ========================================================= */
 
 .about-grid {
+
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+
+    grid-template-columns: .8fr 1.2fr;
+
     gap: 80px;
+
     align-items: start;
 }
 
 .about-card {
+
     min-height: 400px;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
+
     border-radius: 24px;
 
     background:
@@ -524,74 +681,106 @@ header {
         #0b0b0b;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     padding: 35px;
 }
 
 .about-card-inner {
+
     text-align: center;
 }
 
 .about-avatar {
+
     width: 190px;
     height: 190px;
 
-    margin: auto auto 25px;
+    margin:
+        auto auto 25px;
 
     border-radius: 50%;
 
-    border: 3px solid var(--cyan);
+    border:
+        3px solid var(--cyan);
 
     object-fit: cover;
 
-    box-shadow: 0 0 50px rgba(0,217,255,0.15);
+    box-shadow:
+        0 0 50px
+        rgba(0,217,255,0.15);
 }
 
 .about-card h3 {
+
     font-size: 25px;
 }
 
 .about-card p {
+
     color: var(--muted);
 }
 
 .about-content h2 {
-    font-size: clamp(40px,5vw,68px);
+
+    font-size:
+        clamp(40px,5vw,68px);
+
     line-height: 1.05;
+
     letter-spacing: -3px;
+
     margin-bottom: 30px;
 }
 
 .about-content p {
+
     color: var(--muted);
+
     font-size: 17px;
+
     margin-bottom: 20px;
 }
 
 .about-points {
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 15px;
+
     margin-top: 30px;
 }
 
 .about-point {
-    border: 1px solid var(--border);
+
+    border:
+        1px solid var(--border);
+
     background: #0d0d0d;
+
     padding: 20px;
+
     border-radius: 14px;
 }
 
 .about-point strong {
+
     display: block;
+
     color: white;
+
     margin-bottom: 5px;
 }
 
 .about-point span {
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
@@ -601,107 +790,534 @@ header {
 ========================================================= */
 
 .services-grid {
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap: 18px;
 }
 
 .service {
+
     min-height: 245px;
 
     padding: 28px;
 
     background: #101010;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
+
     border-radius: var(--radius);
 
     position: relative;
 
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .service:hover {
+
     transform: translateY(-8px);
-    border-color: rgba(0,217,255,0.45);
+
+    border-color:
+        rgba(0,217,255,.45);
 
     background:
         linear-gradient(
             145deg,
-            rgba(0,217,255,0.07),
+            rgba(0,217,255,.07),
             #101010 45%
         );
 }
 
 .service-number {
+
     color: var(--cyan);
+
     font-size: 13px;
+
     font-weight: 800;
 
     margin-bottom: 45px;
 }
 
 .service h3 {
+
     font-size: 23px;
+
     margin-bottom: 12px;
 }
 
 .service p {
+
     color: var(--muted);
+
     font-size: 15px;
 }
 
+
+/* =========================================================
+   SMART PACKAGE FINDER
+========================================================= */
+
+.package-finder {
+    background:
+        radial-gradient(circle at 50% 20%, rgba(0,217,255,.08), transparent 50%);
+}
+
+.finder-box {
+    max-width: 1050px;
+    margin: auto;
+    padding: 40px;
+    background: #0b0b0b;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.25);
+}
+
+.finder-progress {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.progress-item {
+    height: 6px;
+    border-radius: 99px;
+    background: #222;
+    transition: .3s ease;
+}
+
+.progress-item.active {
+    background: var(--cyan);
+    box-shadow: 0 0 15px rgba(0,217,255,.35);
+}
+
+.finder-step {
+    display: none;
+}
+
+.finder-step.active {
+    display: block;
+    animation: finderFade .4s ease;
+}
+
+@keyframes finderFade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.step-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(0,217,255,.08);
+    border: 1px solid rgba(0,217,255,.25);
+    color: var(--cyan);
+    font-weight: 900;
+}
+
+.step-top h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.step-top p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.finder-options {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+}
+
+.finder-option {
+    width: 100%;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: #111;
+    color: white;
+    cursor: pointer;
+    transition: .25s ease;
+    position: relative;
+}
+
+.finder-option:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0,217,255,.55);
+    background: rgba(0,217,255,.05);
+}
+
+.finder-option.selected {
+    border-color: var(--cyan);
+    background: rgba(0,217,255,.10);
+    box-shadow: 0 0 25px rgba(0,217,255,.08);
+}
+
+.finder-option.selected::after {
+    content: "✓";
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--cyan);
+    color: #000;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.finder-option span {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #181818;
+    border-radius: 12px;
+    font-size: 21px;
+}
+
+.finder-option strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.finder-option small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.finder-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.finder-controls .btn {
+    min-width: 150px;
+}
+
+.finder-hint {
+    color: var(--muted2);
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.finder-result {
+    display: none;
+    text-align: center;
+    padding: 20px 10px 5px;
+}
+
+.finder-result.show {
+    display: block;
+    animation: finderFade .5s ease;
+}
+
+.result-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0,217,255,.10);
+    border: 1px solid rgba(0,217,255,.4);
+    color: var(--cyan);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.recommended-label {
+    display: block;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.finder-result h3 {
+    font-size: clamp(30px,5vw,45px);
+    margin-bottom: 5px;
+}
+
+.result-price {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.finder-result > p {
+    max-width: 700px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.result-summary {
+    max-width: 760px;
+    margin: 25px auto 0;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #101010;
+    text-align: left;
+}
+
+.result-summary strong {
+    color: var(--cyan);
+}
+
+.result-summary p {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.result-reasons {
+    max-width: 700px;
+    margin: 25px auto 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.result-reasons div {
+    padding: 13px;
+    border-radius: 10px;
+    background: #121212;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+.result-reasons span {
+    color: var(--cyan);
+    margin-right: 8px;
+}
+
+.result-reasons strong {
+    font-size: 13px;
+}
+
+.result-btn {
+    min-width: 260px;
+}
+
+.restart-btn {
+    display: block;
+    margin: 18px auto 0;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.restart-btn:hover {
+    color: var(--cyan);
+}
 
 /* =========================================================
    PRICING
 ========================================================= */
 
 .pricing {
+
     background:
         radial-gradient(
             circle at 50% 0,
-            rgba(0,217,255,0.08),
+            rgba(0,217,255,.08),
             transparent 45%
         );
 }
 
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
+/* One unified panel holds all four packages as columns,
+   instead of four separate floating cards. */
 
-.price-card {
-    position: relative;
-
-    background: #0e0e0e;
+.pricing-panel {
 
     border: 1px solid var(--border);
-    border-radius: 20px;
+
+    border-radius: 22px;
+
+    background: #0b0b0b;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,.25);
+
+    overflow: hidden;
+}
+
+.pricing-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 0;
+}
+
+/* Flip-card shell: .price-card is the perspective stage,
+   .flip-card-inner rotates, front/back are its two faces. */
+
+.price-card {
+
+    position: relative;
+
+    perspective: 1800px;
+
+    background: transparent;
+
+    border: none;
+
+    border-right: 1px solid var(--border);
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.price-card:last-child {
+
+    border-right: none;
+}
+
+.flip-card-inner {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 560px;
+
+    transition: transform .7s cubic-bezier(.4,.2,.2,1);
+
+    transform-style: preserve-3d;
+}
+
+.price-card.flipped .flip-card-inner {
+
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    backface-visibility: hidden;
+
+    -webkit-backface-visibility: hidden;
 
     padding: 35px;
 
-    transition: 0.3s ease;
+    transition: background .3s ease;
 }
 
-.price-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(0,217,255,0.4);
+.flip-card-front {
+
+    background: transparent;
+}
+
+.price-card:hover .flip-card-front {
+
+    background: rgba(0,217,255,.03);
 }
 
 .price-card.featured {
-    border-color: var(--cyan);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,217,255,.07),
+            transparent 60%
+        );
 
     box-shadow:
-        0 0 50px rgba(0,217,255,0.08);
+        inset 0 3px 0 0 var(--cyan);
+}
+
+.price-card.recommended {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,217,255,.12),
+            transparent 60%
+        );
+
+    box-shadow:
+        inset 0 3px 0 0 var(--cyan);
+}
+
+.flip-card-back {
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0,217,255,.10),
+            transparent 55%
+        ),
+        #101010;
+
+    transform: rotateY(180deg);
+
+    justify-content: flex-start;
 }
 
 .popular {
+
     position: absolute;
+
     top: 18px;
+
     right: 18px;
 
+    z-index: 5;
+
     background: var(--cyan);
+
     color: #000;
 
     padding: 6px 10px;
@@ -709,56 +1325,247 @@ header {
     border-radius: 6px;
 
     font-size: 11px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.recommended-badge {
+
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    background: var(--cyan);
+
+    color: #000;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+
     font-weight: 900;
 
     text-transform: uppercase;
 }
 
 .price-card h3 {
+
     font-size: 24px;
+
     margin-bottom: 8px;
 }
 
 .price-card .price {
+
     font-size: 50px;
+
     font-weight: 900;
+
     letter-spacing: -2px;
 
     margin: 15px 0 5px;
 }
 
 .price-card .price span {
+
     font-size: 15px;
+
     color: var(--muted);
+
     font-weight: 500;
 }
 
 .price-description {
+
     color: var(--muted);
+
     min-height: 50px;
 
     margin-bottom: 25px;
 }
 
 .features {
+
     list-style: none;
-    margin-bottom: 30px;
+
+    margin-bottom: 20px;
 }
 
 .features li {
+
     color: #c5c5c5;
+
     font-size: 14px;
 
     padding: 8px 0;
 
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.05);
 }
 
 .features li::before {
+
     content: "✓";
+
     color: var(--cyan);
+
     font-weight: 900;
+
     margin-right: 10px;
+}
+
+.flip-front-actions {
+
+    margin-top: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.flip-trigger {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px dashed rgba(0,217,255,.4);
+
+    background: rgba(0,217,255,.05);
+
+    color: var(--cyan);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.flip-trigger:hover {
+
+    background: rgba(0,217,255,.12);
+
+    border-style: solid;
+}
+
+.flip-back-btn {
+
+    align-self: flex-start;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border);
+
+    background: #111;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-bottom: 18px;
+
+    transition: .25s ease;
+}
+
+.flip-back-btn:hover {
+
+    color: var(--cyan);
+
+    border-color: rgba(0,217,255,.4);
+}
+
+.back-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.flip-card-back h4 {
+
+    font-size: 20px;
+
+    margin-bottom: 4px;
+}
+
+.back-tagline {
+
+    color: var(--cyan);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    margin-bottom: 16px;
+}
+
+.back-fit-list {
+
+    list-style: none;
+
+    margin-bottom: 16px;
+
+    overflow-y: auto;
+}
+
+.back-fit-list li {
+
+    font-size: 13px;
+
+    color: #cfcfcf;
+
+    padding: 7px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.05);
+}
+
+.back-fit-list li strong {
+
+    display: block;
+
+    color: white;
+
+    font-size: 13.5px;
+
+    margin-bottom: 2px;
+}
+
+.back-note {
+
+    margin-top: auto;
+
+    color: var(--muted);
+
+    font-size: 12.5px;
+
+    padding-top: 12px;
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
 }
 
 
@@ -767,34 +1574,48 @@ header {
 ========================================================= */
 
 .process-grid {
+
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap: 15px;
 }
 
 .process {
+
     padding: 25px;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
+
     border-radius: 16px;
 
     background: #0d0d0d;
 }
 
 .process-number {
+
     font-size: 40px;
+
     font-weight: 900;
-    color: rgba(0,217,255,0.25);
+
+    color:
+        rgba(0,217,255,.25);
 
     margin-bottom: 25px;
 }
 
 .process h3 {
+
     margin-bottom: 10px;
 }
 
 .process p {
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
@@ -804,38 +1625,54 @@ header {
 ========================================================= */
 
 .skills-grid {
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap: 18px;
 }
 
 .skill {
+
     padding: 28px;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
+
     border-radius: 17px;
 
     background: #0f0f0f;
 
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .skill:hover {
-    border-color: rgba(0,217,255,0.35);
-    transform: translateY(-5px);
+
+    border-color:
+        rgba(0,217,255,.35);
+
+    transform:
+        translateY(-5px);
 }
 
 .skill h3 {
+
     font-size: 20px;
+
     margin-bottom: 8px;
 }
 
 .skill p {
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
 .learning {
+
     display: inline-block;
 
     margin-top: 15px;
@@ -843,6 +1680,7 @@ header {
     color: var(--cyan);
 
     font-size: 12px;
+
     font-weight: 800;
 }
 
@@ -852,41 +1690,56 @@ header {
 ========================================================= */
 
 .projects-grid {
+
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+    grid-template-columns:
+        repeat(2,1fr);
+
     gap: 22px;
 }
 
 .project {
+
     overflow: hidden;
 
     background: #101010;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
+
     border-radius: 20px;
 
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .project:hover {
-    transform: translateY(-8px);
-    border-color: rgba(0,217,255,0.4);
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(0,217,255,.4);
 }
 
 .project-image {
+
     height: 260px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     position: relative;
+
     overflow: hidden;
 
     background:
         radial-gradient(
             circle at 25% 20%,
-            rgba(0,217,255,0.22),
+            rgba(0,217,255,.22),
             transparent 30%
         ),
         linear-gradient(
@@ -896,11 +1749,14 @@ header {
         );
 
     font-size: 27px;
+
     font-weight: 900;
+
     letter-spacing: 1px;
 }
 
 .project-image::after {
+
     content: "";
 
     position: absolute;
@@ -910,35 +1766,48 @@ header {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(0,217,255,0.2);
+    border:
+        1px solid
+        rgba(0,217,255,.2);
 
-    animation: rotate 12s linear infinite;
+    animation:
+        rotate 12s linear infinite;
 }
 
 .project-content {
+
     padding: 28px;
 }
 
 .project-content h3 {
+
     font-size: 24px;
+
     margin-bottom: 10px;
 }
 
 .project-content p {
+
     color: var(--muted);
+
     margin-bottom: 20px;
 }
 
 .tags {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 7px;
 
     margin-bottom: 25px;
 }
 
 .tag {
+
     background: #1b1b1b;
+
     color: #bcbcbc;
 
     padding: 6px 10px;
@@ -954,27 +1823,37 @@ header {
 ========================================================= */
 
 .journey {
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap: 18px;
 }
 
 .journey-item {
+
     padding: 25px;
 
-    border-left: 2px solid var(--cyan);
+    border-left:
+        2px solid var(--cyan);
 
     background: #0d0d0d;
 
-    border-radius: 0 14px 14px 0;
+    border-radius:
+        0 14px 14px 0;
 }
 
 .journey-item h3 {
+
     margin-bottom: 8px;
 }
 
 .journey-item p {
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
@@ -984,11 +1863,15 @@ header {
 ========================================================= */
 
 .faq {
+
     max-width: 850px;
 }
 
 .faq-item {
-    border: 1px solid var(--border);
+
+    border:
+        1px solid var(--border);
+
     border-radius: 14px;
 
     margin-bottom: 12px;
@@ -999,20 +1882,25 @@ header {
 }
 
 .faq-question {
+
     width: 100%;
 
     padding: 20px 22px;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     border: none;
+
     background: transparent;
 
     color: white;
 
     font-size: 16px;
+
     font-weight: 700;
 
     cursor: pointer;
@@ -1021,17 +1909,22 @@ header {
 }
 
 .faq-question span {
+
     color: var(--cyan);
+
     font-size: 22px;
 
-    transition: 0.25s ease;
+    transition: .25s ease;
 }
 
 .faq-answer {
+
     max-height: 0;
+
     overflow: hidden;
 
-    transition: max-height 0.35s ease;
+    transition:
+        max-height .35s ease;
 
     color: var(--muted);
 
@@ -1039,11 +1932,15 @@ header {
 }
 
 .faq-item.active .faq-answer {
+
     max-height: 150px;
+
     padding-bottom: 20px;
 }
 
-.faq-item.active .faq-question span {
+.faq-item.active
+.faq-question span {
+
     transform: rotate(45deg);
 }
 
@@ -1053,28 +1950,34 @@ header {
 ========================================================= */
 
 .cta {
+
     position: relative;
+
     overflow: hidden;
 
     padding: 80px 50px;
 
     text-align: center;
 
-    border: 1px solid rgba(0,217,255,0.3);
+    border:
+        1px solid
+        rgba(0,217,255,.3);
 
     border-radius: 25px;
 
     background:
         radial-gradient(
             circle at center,
-            rgba(0,217,255,0.13),
+            rgba(0,217,255,.13),
             transparent 60%
         ),
         #0c0c0c;
 }
 
 .cta h2 {
-    font-size: clamp(40px,5vw,65px);
+
+    font-size:
+        clamp(40px,5vw,65px);
 
     line-height: 1;
 
@@ -1084,11 +1987,13 @@ header {
 }
 
 .cta p {
+
     color: var(--muted);
 
     max-width: 650px;
 
-    margin: 0 auto 30px;
+    margin:
+        0 auto 30px;
 }
 
 
@@ -1097,28 +2002,37 @@ header {
 ========================================================= */
 
 .contact-grid {
+
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+    grid-template-columns:
+        repeat(2,1fr);
+
     gap: 15px;
 }
 
 .contact-card {
+
     padding: 25px;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     background: #0e0e0e;
 
     border-radius: 15px;
 
-    transition: 0.25s ease;
+    transition: .25s ease;
 }
 
 .contact-card:hover {
-    border-color: rgba(0,217,255,0.4);
+
+    border-color:
+        rgba(0,217,255,.4);
 }
 
 .contact-card small {
+
     display: block;
 
     color: var(--cyan);
@@ -1126,6 +2040,7 @@ header {
     text-transform: uppercase;
 
     font-size: 11px;
+
     font-weight: 800;
 
     letter-spacing: 2px;
@@ -1134,13 +2049,16 @@ header {
 }
 
 .contact-card a {
+
     color: #ddd;
+
     font-size: 17px;
 
     word-break: break-word;
 }
 
 .contact-card a:hover {
+
     color: var(--cyan);
 }
 
@@ -1150,7 +2068,9 @@ header {
 ========================================================= */
 
 footer {
-    border-top: 1px solid var(--border);
+
+    border-top:
+        1px solid var(--border);
 
     padding: 30px 0;
 
@@ -1160,20 +2080,25 @@ footer {
 }
 
 .footer-content {
+
     display: flex;
+
     justify-content: space-between;
+
     gap: 20px;
 }
 
 
 /* =========================================================
-   WHATSAPP FLOAT
+   WHATSAPP
 ========================================================= */
 
 .whatsapp-float {
+
     position: fixed;
 
     right: 25px;
+
     bottom: 25px;
 
     width: 58px;
@@ -1182,42 +2107,56 @@ footer {
     border-radius: 50%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: #20d66b;
+
     color: #000;
 
     font-size: 24px;
 
     z-index: 900;
 
-    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    box-shadow:
+        0 8px 30px
+        rgba(0,0,0,.35);
 
-    transition: 0.25s ease;
+    transition: .25s ease;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.08) translateY(-4px);
+
+    transform:
+        scale(1.08)
+        translateY(-4px);
 }
 
 
 /* =========================================================
-   REVEAL ANIMATION
+   REVEAL
 ========================================================= */
 
 .reveal {
+
     opacity: 0;
-    transform: translateY(30px);
+
+    transform:
+        translateY(30px);
 
     transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+        opacity .7s ease,
+        transform .7s ease;
 }
 
 .reveal.show {
+
     opacity: 1;
-    transform: translateY(0);
+
+    transform:
+        translateY(0);
 }
 
 
@@ -1225,65 +2164,100 @@ footer {
    RESPONSIVE
 ========================================================= */
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
 
     .hero-grid,
     .about-grid {
+
         grid-template-columns: 1fr;
     }
 
     .hero {
+
         text-align: center;
     }
 
     .hero-description {
+
         margin-left: auto;
+
         margin-right: auto;
     }
 
     .hero-buttons {
+
         justify-content: center;
     }
 
     .hero-image-wrapper {
+
         order: -1;
     }
 
     .services-grid,
     .skills-grid {
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .pricing-grid {
+
         grid-template-columns: 1fr;
+    }
+
+    .pricing-panel {
+
         max-width: 600px;
+
+        margin: auto;
+    }
+
+    .price-card {
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .price-card:last-child {
+
+        border-bottom: none;
     }
 
     .process-grid {
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .journey {
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
     }
 }
 
 
-@media (max-width: 750px) {
+@media (max-width:750px) {
 
     section {
+
         padding: 80px 0;
     }
 
     .navbar {
+
         height: 70px;
     }
 
     .menu-btn {
+
         display: block;
     }
 
     .nav-links {
+
         position: absolute;
 
         top: 70px;
@@ -1292,60 +2266,79 @@ footer {
         width: 100%;
 
         display: none;
+
         flex-direction: column;
 
         gap: 0;
 
         padding: 12px;
 
-        background: rgba(5,5,5,0.98);
+        background:
+            rgba(5,5,5,.98);
 
-        border-bottom: 1px solid var(--border);
+        border-bottom:
+            1px solid var(--border);
     }
 
     .nav-links.active {
+
         display: flex;
     }
 
     .nav-links li {
+
         width: 100%;
     }
 
     .nav-links a {
+
         display: block;
+
         padding: 14px;
     }
 
     .hero {
+
         min-height: auto;
+
         padding-top: 140px;
+
         padding-bottom: 80px;
     }
 
     .hero h1 {
-        font-size: clamp(48px,13vw,78px);
+
+        font-size:
+            clamp(48px,13vw,78px);
+
         letter-spacing: -4px;
     }
 
     .hero-description {
+
         font-size: 16px;
     }
 
     .hero-image-box {
+
         width: 270px;
         height: 270px;
     }
 
     .image-ring {
+
         width: 300px;
         height: 300px;
     }
 
     .trust-grid {
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .about-points {
+
         grid-template-columns: 1fr;
     }
 
@@ -1354,69 +2347,109 @@ footer {
     .projects-grid,
     .journey,
     .contact-grid {
+
         grid-template-columns: 1fr;
     }
 
     .process-grid {
+
         grid-template-columns: 1fr;
     }
 
     .section-title {
+
         letter-spacing: -2px;
     }
 
     .project-image {
+
         height: 210px;
     }
 
     .cta {
+
         padding: 55px 22px;
     }
 
     .footer-content {
+
         flex-direction: column;
+
         text-align: center;
     }
 
     .whatsapp-float {
+
         right: 18px;
+
         bottom: 18px;
+    }
+
+    .finder-box {
+
+        padding: 25px 18px;
+    }
+
+    .finder-options {
+
+        grid-template-columns: 1fr;
+    }
+
+    .step-top h3 {
+
+        font-size: 21px;
+    }
+
+    .result-reasons {
+
+        grid-template-columns: 1fr;
+    }
+
+    .flip-card-inner {
+
+        min-height: 620px;
     }
 }
 
 
-@media (max-width: 450px) {
+@media (max-width:450px) {
 
     .container {
+
         width: 92%;
     }
 
     .logo {
+
         font-size: 24px;
     }
 
     .hero-buttons .btn {
+
         width: 100%;
     }
 
     .hero-image-box {
+
         width: 230px;
         height: 230px;
     }
 
     .image-ring {
+
         width: 255px;
         height: 255px;
     }
 
     .trust-item strong {
+
         font-size: 17px;
     }
 
     .trust-item {
+
         font-size: 12px;
     }
-
 }
 
 
@@ -1424,23 +2457,35 @@ footer {
    REDUCED MOTION
 ========================================================= */
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
 
     html {
+
         scroll-behavior: auto;
     }
 
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
     }
 
+    .flip-card-inner {
+
+        transition: none;
+    }
 }
 
 </style>
+
 </head>
 
 
@@ -1486,13 +2531,17 @@ footer {
 </li>
 
 <li>
-    <a
-        class="nav-cta"
-        href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website."
-        target="_blank"
-        rel="noopener noreferrer">
-        Hire Me
-    </a>
+
+<a
+    class="nav-cta"
+    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website."
+    target="_blank"
+    rel="noopener noreferrer">
+
+    Hire Me
+
+</a>
+
 </li>
 
 </ul>
@@ -1510,7 +2559,6 @@ footer {
 </nav>
 
 </header>
-
 
 
 <!-- =======================================================
@@ -1552,7 +2600,7 @@ responsive and professional websites for
 businesses, creators and individuals.
 
 <strong style="color:white;">
-Websites starting from ₹999.
+Websites starting from ₹2999.
 </strong>
 
 </p>
@@ -1561,11 +2609,11 @@ Websites starting from ₹999.
 <div class="hero-buttons">
 
 <a
-    href="#pricing"
+    href="#package-finder"
     class="btn btn-primary">
 
-    View Packages →
-    
+    Find My Package →
+
 </a>
 
 
@@ -1593,27 +2641,17 @@ Websites starting from ₹999.
 </div>
 
 
-
 <div class="hero-image-wrapper reveal">
 
 <div class="image-ring"></div>
 
 <div class="hero-image-box">
 
-<!--
-    IMPORTANT:
-    Put your photo in the same folder as index.html
-    and name it:
-
-    profile.jpg
--->
-
 <img
     src="profile.jpg"
     alt="Prince - Web Developer"
     class="hero-image"
-    onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#00d9ff;font-size:80px;font-weight:900;&quot;>P.</div>';"
->
+    onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#00d9ff;font-size:80px;font-weight:900;&quot;>P.</div>';">
 
 </div>
 
@@ -1627,9 +2665,8 @@ Websites starting from ₹999.
 </section>
 
 
-
 <!-- =======================================================
-     TRUST STRIP
+     TRUST
 ======================================================= -->
 
 <div class="trust">
@@ -1638,7 +2675,7 @@ Websites starting from ₹999.
 
 <div class="trust-item">
 
-<strong>₹999+</strong>
+<strong>₹2,999+</strong>
 
 Starting Price
 
@@ -1676,7 +2713,6 @@ Easy Communication
 </div>
 
 
-
 <!-- =======================================================
      ABOUT
 ======================================================= -->
@@ -1698,8 +2734,7 @@ Easy Communication
     src="profile.jpg"
     alt="Prince"
     class="about-avatar"
-    onerror="this.style.display='none';"
->
+    onerror="this.style.display='none';">
 
 <h3>Prince.</h3>
 
@@ -1708,7 +2743,6 @@ Easy Communication
 </div>
 
 </div>
-
 
 
 <div class="about-content reveal">
@@ -1799,13 +2833,11 @@ Easy communication through WhatsApp.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -1927,6 +2959,234 @@ making websites accessible online.
 </section>
 
 
+<!-- =======================================================
+     SMART PACKAGE FINDER
+======================================================= -->
+
+<section id="package-finder" class="package-finder">
+
+<div class="glow glow-one"></div>
+
+<div class="container">
+
+<div class="section-label reveal">
+    FIND YOUR PACKAGE
+</div>
+
+<h2 class="section-title reveal">
+    Not sure which package you need?
+</h2>
+
+<p class="section-description reveal">
+    Tell me about your business, requirements and goals.
+    You can select multiple options and I'll recommend
+    the package that fits you best.
+</p>
+
+<div class="finder-box reveal">
+
+<div class="finder-progress" aria-label="Package finder progress">
+    <div class="progress-item active" id="progress1"></div>
+    <div class="progress-item" id="progress2"></div>
+    <div class="progress-item" id="progress3"></div>
+    <div class="progress-item" id="progress4"></div>
+</div>
+
+<!-- STEP 1 -->
+<div class="finder-step active" id="step1">
+
+<div class="step-top">
+<span class="step-number">01</span>
+<div>
+<h3>What type of business do you have?</h3>
+<p>Select one option that best describes your business.</p>
+</div>
+</div>
+
+<div class="finder-options">
+
+<button type="button" class="finder-option" data-business="portfolio">
+<span>👤</span><div><strong>Portfolio / Freelancer</strong><small>Personal brand, developer, creator</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="local">
+<span>🏪</span><div><strong>Local Business</strong><small>Shop, service provider, small business</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="gym">
+<span>🏋️</span><div><strong>Gym / Fitness</strong><small>Gym, trainer, fitness studio</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="restaurant">
+<span>🍽️</span><div><strong>Restaurant / Cafe</strong><small>Restaurant, cafe, food business</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="salon">
+<span>💇</span><div><strong>Salon / Beauty</strong><small>Salon, barber, beauty services</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="realestate">
+<span>🏠</span><div><strong>Real Estate</strong><small>Property dealer, real estate agency</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="education">
+<span>🎓</span><div><strong>Education / Coaching</strong><small>Institute, tutor, coaching centre</small></div>
+</button>
+
+<button type="button" class="finder-option" data-business="agency">
+<span>🚀</span><div><strong>Agency / Startup</strong><small>Digital agency, startup, company</small></div>
+</button>
+
+</div>
+
+</div>
+
+<!-- STEP 2 -->
+<div class="finder-step" id="step2">
+
+<div class="step-top">
+<span class="step-number">02</span>
+<div>
+<h3>What do you need?</h3>
+<p>Select <strong>multiple options</strong> that you want on your website.</p>
+</div>
+</div>
+
+<div class="finder-options">
+
+<button type="button" class="finder-option multi-option" data-requirement="customers">
+<span>👥</span><div><strong>More Customers</strong><small>Turn website visitors into customers</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="whatsapp">
+<span>💬</span><div><strong>WhatsApp Inquiries</strong><small>Let customers contact you quickly</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="services">
+<span>🧩</span><div><strong>Services Showcase</strong><small>Show your services clearly</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="gallery">
+<span>🖼️</span><div><strong>Portfolio / Gallery</strong><small>Display your work, products or projects</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="contact">
+<span>📩</span><div><strong>Contact Form</strong><small>Collect customer enquiries</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="google">
+<span>🔎</span><div><strong>Google / Online Presence</strong><small>Build credibility online</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="pages">
+<span>📄</span><div><strong>Multiple Pages</strong><small>Home, About, Services, Contact and more</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-requirement="booking">
+<span>📅</span><div><strong>Booking / Appointment</strong><small>Help customers request appointments</small></div>
+</button>
+
+</div>
+
+<div class="finder-controls">
+<button type="button" class="btn btn-secondary" id="backToStep1">← Back</button>
+<button type="button" class="btn btn-primary" id="toStep3">Continue →</button>
+</div>
+
+<p class="finder-hint">You can select as many requirements as you need.</p>
+
+</div>
+
+<!-- STEP 3 -->
+<div class="finder-step" id="step3">
+
+<div class="step-top">
+<span class="step-number">03</span>
+<div>
+<h3>What are your website goals?</h3>
+<p>Select <strong>multiple goals</strong> that matter to your business.</p>
+</div>
+</div>
+
+<div class="finder-options">
+
+<button type="button" class="finder-option multi-option" data-goal="presence">
+<span>🌐</span><div><strong>Basic Online Presence</strong><small>Look professional online</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-goal="leads">
+<span>📈</span><div><strong>Leads / Inquiries</strong><small>Generate more enquiries</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-goal="brand">
+<span>✨</span><div><strong>Professional Brand</strong><small>Build a stronger brand image</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-goal="advanced">
+<span>⚡</span><div><strong>Advanced Business Website</strong><small>More features and custom sections</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-goal="sales">
+<span>🛒</span><div><strong>Increase Sales</strong><small>Present offers and convert visitors</small></div>
+</button>
+
+<button type="button" class="finder-option multi-option" data-goal="trust">
+<span>🛡️</span><div><strong>Build Trust</strong><small>Show reviews, work and business details</small></div>
+</button>
+
+</div>
+
+<div class="finder-controls">
+<button type="button" class="btn btn-secondary" id="backToStep2">← Back</button>
+<button type="button" class="btn btn-primary" id="showRecommendation">Find My Package →</button>
+</div>
+
+<p class="finder-hint">Select one or more goals. We'll use all of them in the recommendation.</p>
+
+</div>
+
+<!-- RESULT -->
+<div class="finder-result" id="finderResult">
+
+<div class="result-icon">✓</div>
+
+<span class="recommended-label">RECOMMENDED FOR YOUR BUSINESS</span>
+
+<h3 id="resultTitle">Business Website</h3>
+
+<div class="result-price" id="resultPrice">₹6,999</div>
+
+<p id="resultDescription">
+A professional website designed around your business requirements.
+</p>
+
+<div class="result-summary">
+<strong>Your selection</strong>
+<p id="resultSummary">Business • Requirements • Goals</p>
+</div>
+
+<div class="result-reasons">
+<div><span>✓</span><strong id="reason1">Professional Design</strong></div>
+<div><span>✓</span><strong id="reason2">WhatsApp Integration</strong></div>
+<div><span>✓</span><strong id="reason3">Responsive Website</strong></div>
+<div><span>✓</span><strong id="reason4">Business-Focused Sections</strong></div>
+</div>
+
+<a href="#" id="resultWhatsApp" target="_blank" rel="noopener noreferrer" class="btn btn-primary result-btn">
+Get This Package →
+</a>
+
+<button type="button" class="restart-btn" id="restartFinder">
+← Start Again
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- =======================================================
      PRICING
@@ -1936,190 +3196,319 @@ making websites accessible online.
 
 <div class="container">
 
-<div class="section-label reveal">
-    Simple Pricing
-</div>
+<div class="section-label reveal">Simple Pricing</div>
 
 <h2 class="section-title reveal">
-    Choose the right website package.
+    Packages built around your business.
 </h2>
 
 <p class="section-description reveal">
-
-Start small or choose a complete business
-website. Every project is customized according
-to your requirements.
-
+    Choose a package directly or use the package finder above
+    to get a recommendation based on your requirements.
+    Tap <strong style="color:white;">"Who is this for?"</strong>
+    on any card to see why it fits your kind of business.
 </p>
 
+<div class="pricing-panel reveal">
 
 <div class="pricing-grid">
 
+<!-- STARTER -->
+<div class="price-card reveal" data-package="starter">
 
-<!-- BASIC -->
+<div class="flip-card-inner">
 
-<div class="price-card reveal">
+<div class="flip-card-front">
 
 <h3>Starter</h3>
 
 <div class="price">
-    ₹999 <span>/ project</span>
+    ₹2,999 <span>/ project</span>
 </div>
 
 <p class="price-description">
-
-Perfect for a simple personal page,
-portfolio or basic landing page.
-
+Perfect for portfolios, personal brands and simple landing pages.
 </p>
 
-
 <ul class="features">
-
-<li>1-page website</li>
-
-<li>Modern responsive design</li>
-
-<li>Mobile friendly</li>
-
-<li>Basic animations</li>
-
-<li>Contact / WhatsApp button</li>
-
+<li>1-page professional website</li>
+<li>Modern responsive UI</li>
+<li>Mobile / tablet friendly</li>
+<li>Basic animations & interactions</li>
+<li>WhatsApp / contact button</li>
+<li>Basic SEO-ready structure</li>
 <li>Deployment assistance</li>
-
 </ul>
 
+<div class="flip-front-actions">
 
-<a
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20your%20₹999%20Starter%20Website%20package."
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary"
-    style="width:100%;">
-
-    Get Started →
-
+<a href="https://wa.me/917419306032?text=Hi%20Prince!%20I'm%20interested%20in%20your%20%E2%82%B92,999%20Starter%20Website%20package."
+target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%;">
+Get Started →
 </a>
 
+<button type="button" class="flip-trigger" data-flip-target="starter">
+Who is this for? →
+</button>
+
 </div>
 
+</div>
 
+<div class="flip-card-back">
+
+<button type="button" class="flip-back-btn" data-flip-target="starter">
+← Back to pricing
+</button>
+
+<div class="back-icon">👤</div>
+<h4>Best For</h4>
+<span class="back-tagline">Portfolios &amp; Personal Brands</span>
+
+<ul class="back-fit-list">
+<li><strong>Freelancers &amp; developers</strong>Show your work and skills to land clients or jobs.</li>
+<li><strong>Students &amp; job seekers</strong>A personal site to stand out on your resume.</li>
+<li><strong>Creators &amp; solo professionals</strong>One clean page with everything about you.</li>
+<li><strong>Anyone testing the waters</strong>Get online fast, without paying for pages you don't need yet.</li>
+</ul>
+
+<p class="back-note">
+Useful for you if you just need one strong page and a way for people to reach you — not a full multi-page business site.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 <!-- BUSINESS -->
+<div class="price-card featured reveal" data-package="business">
 
-<div class="price-card featured reveal">
+<div class="popular">Most Popular</div>
 
-<div class="popular">
-    Most Popular
-</div>
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
 
 <h3>Business</h3>
 
 <div class="price">
-    ₹1,999 <span>/ project</span>
+    ₹6,999 <span>/ project</span>
 </div>
 
 <p class="price-description">
-
-For local businesses that need a
-professional online presence.
-
+For local businesses that need a professional website that can generate enquiries.
 </p>
 
-
 <ul class="features">
-
-<li>Up to 4 sections/pages</li>
-
-<li>Professional UI design</li>
-
-<li>Fully responsive</li>
-
-<li>Animations & interactions</li>
-
+<li>Up to 5 pages / sections</li>
+<li>Professional business UI</li>
+<li>Fully responsive design</li>
+<li>Advanced animations & interactions</li>
 <li>WhatsApp integration</li>
-
-<li>Contact section</li>
-
+<li>Contact / enquiry section</li>
+<li>Services & gallery sections</li>
+<li>Basic SEO setup</li>
 <li>Deployment assistance</li>
-
 </ul>
 
+<div class="flip-front-actions">
 
-<a
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20your%20₹1,999%20Business%20Website%20package."
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-primary"
-    style="width:100%;">
-
-    Choose Business →
-
+<a href="https://wa.me/917419306032?text=Hi%20Prince!%20I'm%20interested%20in%20your%20%E2%82%B96,999%20Business%20Website%20package."
+target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">
+Choose Business →
 </a>
+
+<button type="button" class="flip-trigger" data-flip-target="business">
+Who is this for? →
+</button>
 
 </div>
 
+</div>
 
+<div class="flip-card-back">
+
+<button type="button" class="flip-back-btn" data-flip-target="business">
+← Back to pricing
+</button>
+
+<div class="back-icon">🏪</div>
+<h4>Best For</h4>
+<span class="back-tagline">Local Businesses</span>
+
+<ul class="back-fit-list">
+<li><strong>Gyms &amp; fitness studios</strong>Show memberships, trainers and get enquiries on WhatsApp.</li>
+<li><strong>Restaurants &amp; cafes</strong>Menu, gallery and location in one professional page.</li>
+<li><strong>Salons &amp; beauty services</strong>Showcase services and let clients reach out directly.</li>
+<li><strong>Any local shop or service</strong>Look credible on Google and turn visitors into customers.</li>
+</ul>
+
+<p class="back-note">
+Useful for you if walk-in or WhatsApp enquiries drive your business and you need a site that actively brings customers in.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROFESSIONAL -->
+<div class="price-card reveal" data-package="professional">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<h3>Professional</h3>
+
+<div class="price">
+    ₹12,999 <span>/ project</span>
+</div>
+
+<p class="price-description">
+For growing businesses that need stronger branding, more pages and lead-focused design.
+</p>
+
+<ul class="features">
+<li>Up to 8 pages / sections</li>
+<li>Premium custom UI design</li>
+<li>Advanced responsive layouts</li>
+<li>Advanced animations & interactions</li>
+<li>WhatsApp + enquiry flow</li>
+<li>Lead-generation focused sections</li>
+<li>Portfolio / gallery / testimonials</li>
+<li>SEO-ready structure</li>
+<li>Google Search Console setup assistance</li>
+<li>Deployment assistance</li>
+</ul>
+
+<div class="flip-front-actions">
+
+<a href="https://wa.me/917419306032?text=Hi%20Prince!%20I'm%20interested%20in%20your%20%E2%82%B912,999%20Professional%20Website%20package."
+target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%;">
+Discuss Professional →
+</a>
+
+<button type="button" class="flip-trigger" data-flip-target="professional">
+Who is this for? →
+</button>
+
+</div>
+
+</div>
+
+<div class="flip-card-back">
+
+<button type="button" class="flip-back-btn" data-flip-target="professional">
+← Back to pricing
+</button>
+
+<div class="back-icon">🏠</div>
+<h4>Best For</h4>
+<span class="back-tagline">Growing &amp; Lead-Driven Businesses</span>
+
+<ul class="back-fit-list">
+<li><strong>Real estate &amp; property dealers</strong>Multiple listings, pages and a trust-building brand presence.</li>
+<li><strong>Education &amp; coaching centres</strong>Course pages, testimonials and enquiry-focused layout.</li>
+<li><strong>Businesses ready to scale</strong>Need more pages and stronger SEO than a starter site.</li>
+<li><strong>High-ticket services</strong>Where visitors need more convincing before they enquire.</li>
+</ul>
+
+<p class="back-note">
+Useful for you if a single enquiry is worth a lot, and you need branding and content that builds real trust before someone reaches out.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 <!-- PREMIUM -->
+<div class="price-card reveal" data-package="premium">
 
-<div class="price-card reveal">
+<div class="popular">Premium</div>
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
 
 <h3>Premium</h3>
 
 <div class="price">
-    ₹3,999 <span>/ project</span>
+    ₹19,999 <span>/ project</span>
 </div>
 
 <p class="price-description">
-
-For businesses and brands looking
-for a more complete website experience.
-
+For brands and businesses that want a high-end custom website experience.
 </p>
 
-
 <ul class="features">
-
-<li>Multi-section website</li>
-
-<li>Premium modern UI</li>
-
-<li>Advanced animations</li>
-
-<li>Responsive design</li>
-
-<li>WhatsApp integration</li>
-
-<li>Contact / lead section</li>
-
-<li>Deployment assistance</li>
-
+<li>10+ pages / custom sections</li>
+<li>High-end custom UI/UX</li>
+<li>Advanced animations & interactions</li>
+<li>Conversion-focused structure</li>
+<li>Advanced lead-generation sections</li>
+<li>WhatsApp & enquiry integration</li>
+<li>Gallery / portfolio / testimonials</li>
+<li>Custom forms & business flows</li>
+<li>Advanced SEO-ready structure</li>
+<li>Google Search Console assistance</li>
+<li>Deployment & launch assistance</li>
 </ul>
 
+<div class="flip-front-actions">
 
-<a
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20your%20₹3,999%20Premium%20Website%20package."
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary"
-    style="width:100%;">
-
-    Discuss Project →
-
+<a href="https://wa.me/917419306032?text=Hi%20Prince!%20I'm%20interested%20in%20your%20%E2%82%B919,999%20Premium%20Website%20package."
+target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%;">
+Discuss Premium →
 </a>
+
+<button type="button" class="flip-trigger" data-flip-target="premium">
+Who is this for? →
+</button>
 
 </div>
 
+</div>
+
+<div class="flip-card-back">
+
+<button type="button" class="flip-back-btn" data-flip-target="premium">
+← Back to pricing
+</button>
+
+<div class="back-icon">🚀</div>
+<h4>Best For</h4>
+<span class="back-tagline">Agencies, Startups &amp; Established Brands</span>
+
+<ul class="back-fit-list">
+<li><strong>Digital agencies &amp; startups</strong>A custom, conversion-focused site that reflects a serious brand.</li>
+<li><strong>Businesses with complex needs</strong>Custom forms, multiple flows and 10+ pages of content.</li>
+<li><strong>Brands scaling fast</strong>Need advanced SEO and a site built to convert at volume.</li>
+<li><strong>Anyone who wants no templates</strong>Fully custom UI/UX, built around your business only.</li>
+</ul>
+
+<p class="back-note">
+Useful for you if your brand and functionality needs go beyond a standard business site and you want something fully custom.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 </div>
 
 </section>
-
-
 
 <!-- =======================================================
      PROCESS
@@ -2151,10 +3540,12 @@ what happens next.
 <div class="process reveal">
 
 <div class="process-number">
-    01
+01
 </div>
 
-<h3>Tell Me</h3>
+<h3>
+Tell Me
+</h3>
 
 <p>
 Send me your business details,
@@ -2167,10 +3558,12 @@ requirements and website idea.
 <div class="process reveal">
 
 <div class="process-number">
-    02
+02
 </div>
 
-<h3>Design</h3>
+<h3>
+Design
+</h3>
 
 <p>
 I create the structure, design and
@@ -2183,10 +3576,12 @@ visual direction for your website.
 <div class="process reveal">
 
 <div class="process-number">
-    03
+03
 </div>
 
-<h3>Build</h3>
+<h3>
+Build
+</h3>
 
 <p>
 I develop the responsive website
@@ -2199,10 +3594,12 @@ and add the required functionality.
 <div class="process reveal">
 
 <div class="process-number">
-    04
+04
 </div>
 
-<h3>Launch</h3>
+<h3>
+Launch
+</h3>
 
 <p>
 Your website is tested and prepared
@@ -2217,7 +3614,6 @@ for deployment online.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2249,7 +3645,9 @@ learning as I progress toward full-stack development.
 
 <div class="skill reveal">
 
-<h3>HTML5</h3>
+<h3>
+HTML5
+</h3>
 
 <p>
 Semantic and structured web pages.
@@ -2260,7 +3658,9 @@ Semantic and structured web pages.
 
 <div class="skill reveal">
 
-<h3>CSS3</h3>
+<h3>
+CSS3
+</h3>
 
 <p>
 Responsive layouts, animations and modern UI.
@@ -2271,7 +3671,9 @@ Responsive layouts, animations and modern UI.
 
 <div class="skill reveal">
 
-<h3>JavaScript</h3>
+<h3>
+JavaScript
+</h3>
 
 <p>
 Interactive and dynamic web experiences.
@@ -2282,7 +3684,9 @@ Interactive and dynamic web experiences.
 
 <div class="skill reveal">
 
-<h3>Git & GitHub</h3>
+<h3>
+Git & GitHub
+</h3>
 
 <p>
 Version control and project deployment workflow.
@@ -2293,7 +3697,9 @@ Version control and project deployment workflow.
 
 <div class="skill reveal">
 
-<h3>React</h3>
+<h3>
+React
+</h3>
 
 <p>
 Component-based frontend development.
@@ -2308,7 +3714,9 @@ Currently Learning
 
 <div class="skill reveal">
 
-<h3>Node.js</h3>
+<h3>
+Node.js
+</h3>
 
 <p>
 Backend and server-side JavaScript.
@@ -2323,7 +3731,9 @@ Currently Learning
 
 <div class="skill reveal">
 
-<h3>Express.js</h3>
+<h3>
+Express.js
+</h3>
 
 <p>
 REST API and backend development.
@@ -2338,7 +3748,9 @@ Currently Learning
 
 <div class="skill reveal">
 
-<h3>MongoDB</h3>
+<h3>
+MongoDB
+</h3>
 
 <p>
 Database management and data storage.
@@ -2353,7 +3765,9 @@ Currently Learning
 
 <div class="skill reveal">
 
-<h3>AI Tools</h3>
+<h3>
+AI Tools
+</h3>
 
 <p>
 AI-assisted development, debugging
@@ -2368,7 +3782,6 @@ and productivity.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2398,45 +3811,46 @@ demos to see my work in action.
 <div class="projects-grid">
 
 
-<!-- PROJECT 1 -->
-
 <div class="project reveal">
 
 <div class="project-image">
-    WEATHER APP
+    STAR OVERSEAS
 </div>
 
 <div class="project-content">
 
 <h3>
-    Weather Application
+Star overseas
 </h3>
 
 <p>
 
-A responsive weather application that
-retrieves weather information using an API.
+Designed and built the full business website for Star Overseas, a Delhi-based food ingredient distributor supplying 17+ global brands.
+The site showcases their product catalogue and company credibility, with a clean, mobile-responsive design and integrated WhatsApp contact for quick client inquiries.
 
 </p>
 
 
 <div class="tags">
 
-<span class="tag">HTML</span>
-<span class="tag">CSS</span>
-<span class="tag">JavaScript</span>
-<span class="tag">API</span>
+<span class="tag">REACT</span>
+
+<span class="tag">TANSTACK</span>
+
+<span class="tag">TAILWIND</span>
+
+<span class="tag">APP-SCRIPT</span>
 
 </div>
 
 
 <a
-    href="https://princesain27.github.io/weather-app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary">
+href="staroverseas.in"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-secondary">
 
-    Live Demo →
+Live Demo →
 
 </a>
 
@@ -2444,9 +3858,6 @@ retrieves weather information using an API.
 
 </div>
 
-
-
-<!-- PROJECT 2 -->
 
 <div class="project reveal">
 
@@ -2457,7 +3868,7 @@ retrieves weather information using an API.
 <div class="project-content">
 
 <h3>
-    Task Management Application
+Task Management Application
 </h3>
 
 <p>
@@ -2471,19 +3882,21 @@ to organize daily tasks efficiently.
 <div class="tags">
 
 <span class="tag">HTML</span>
+
 <span class="tag">CSS</span>
+
 <span class="tag">JavaScript</span>
 
 </div>
 
 
 <a
-    href="https://princesain27.github.io/Task-manager/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary">
+href="https://princesain27.github.io/Task-manager/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-secondary">
 
-    Live Demo →
+Live Demo →
 
 </a>
 
@@ -2491,9 +3904,6 @@ to organize daily tasks efficiently.
 
 </div>
 
-
-
-<!-- PROJECT 3 -->
 
 <div class="project reveal">
 
@@ -2504,7 +3914,7 @@ to organize daily tasks efficiently.
 <div class="project-content">
 
 <h3>
-    Gym Business Website
+Gym Business Website
 </h3>
 
 <p>
@@ -2519,20 +3929,23 @@ contact options.
 <div class="tags">
 
 <span class="tag">HTML</span>
+
 <span class="tag">CSS</span>
+
 <span class="tag">JavaScript</span>
+
 <span class="tag">Responsive</span>
 
 </div>
 
 
 <a
-    href="https://princesain27.github.io/Demo-gym-websites/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary">
+href="https://princesain27.github.io/Demo-gym-websites/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-secondary">
 
-    Live Demo →
+Live Demo →
 
 </a>
 
@@ -2540,9 +3953,6 @@ contact options.
 
 </div>
 
-
-
-<!-- PROJECT 4 -->
 
 <div class="project reveal">
 
@@ -2553,7 +3963,7 @@ contact options.
 <div class="project-content">
 
 <h3>
-    Business Website
+Business Website
 </h3>
 
 <p>
@@ -2568,20 +3978,23 @@ presence.
 <div class="tags">
 
 <span class="tag">HTML</span>
+
 <span class="tag">CSS</span>
+
 <span class="tag">JavaScript</span>
+
 <span class="tag">UI</span>
 
 </div>
 
 
 <a
-    href="https://princesain27.github.io/BUSINESS-WEBSITE/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-secondary">
+href="https://princesain27.github.io/BUSINESS-WEBSITE/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-secondary">
 
-    Live Demo →
+Live Demo →
 
 </a>
 
@@ -2595,7 +4008,6 @@ presence.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2628,7 +4040,7 @@ by learning and building real projects.
 <div class="journey-item reveal">
 
 <h3>
-    HTML & CSS
+HTML & CSS
 </h3>
 
 <p>
@@ -2642,7 +4054,7 @@ with modern layouts and designs.
 <div class="journey-item reveal">
 
 <h3>
-    JavaScript
+JavaScript
 </h3>
 
 <p>
@@ -2656,7 +4068,7 @@ functionality to websites.
 <div class="journey-item reveal">
 
 <h3>
-    React
+React
 </h3>
 
 <p>
@@ -2670,7 +4082,7 @@ and modern application architecture.
 <div class="journey-item reveal">
 
 <h3>
-    Node.js + Express
+Node.js + Express
 </h3>
 
 <p>
@@ -2683,7 +4095,7 @@ Learning backend development and REST APIs.
 <div class="journey-item reveal">
 
 <h3>
-    MongoDB
+MongoDB
 </h3>
 
 <p>
@@ -2697,7 +4109,7 @@ application data.
 <div class="journey-item reveal">
 
 <h3>
-    Full-Stack Development
+Full-Stack Development
 </h3>
 
 <p>
@@ -2713,7 +4125,6 @@ from frontend to backend and deployment.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2732,6 +4143,7 @@ from frontend to backend and deployment.
     Questions clients usually ask.
 </h2>
 
+
 <div class="faq">
 
 
@@ -2748,15 +4160,16 @@ What type of websites do you build?
 <div class="faq-answer">
 
 <p>
+
 I build business websites, landing pages,
 portfolio websites, gym websites, local
 business websites and custom frontend projects.
+
 </p>
 
 </div>
 
 </div>
-
 
 
 <div class="faq-item reveal">
@@ -2772,15 +4185,16 @@ How much does a website cost?
 <div class="faq-answer">
 
 <p>
-My starter package begins at ₹999. The final
+
+My starter package begins at ₹2,999. The final
 price depends on the number of pages, features,
 design requirements and functionality.
+
 </p>
 
 </div>
 
 </div>
-
 
 
 <div class="faq-item reveal">
@@ -2796,15 +4210,16 @@ Will the website work on mobile?
 <div class="faq-answer">
 
 <p>
+
 Yes. Responsive design is included so the
 website can work across mobile, tablet and
 desktop screens.
+
 </p>
 
 </div>
 
 </div>
-
 
 
 <div class="faq-item reveal">
@@ -2820,14 +4235,15 @@ Can you deploy the website online?
 <div class="faq-answer">
 
 <p>
+
 Yes. I can help prepare and deploy the website
 using a suitable hosting or deployment platform.
+
 </p>
 
 </div>
 
 </div>
-
 
 
 <div class="faq-item reveal">
@@ -2843,9 +4259,11 @@ How do I start a project?
 <div class="faq-answer">
 
 <p>
+
 Simply message me on WhatsApp with your business
 name, website requirements and what you want
 the website to achieve.
+
 </p>
 
 </div>
@@ -2858,7 +4276,6 @@ the website to achieve.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2872,7 +4289,7 @@ the website to achieve.
 <div class="cta reveal">
 
 <h2>
-    Have a website idea?
+Have a website idea?
 </h2>
 
 <p>
@@ -2884,24 +4301,24 @@ modern and responsive website.
 
 
 <div class="hero-buttons"
-     style="justify-content:center;">
+style="justify-content:center;">
 
 <a
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%20have%20a%20website%20idea%20and%20I%27d%20like%20to%20discuss%20it."
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn btn-primary">
+href="https://wa.me/917419306032?text=Hi%20Prince!%20I%20have%20a%20website%20idea%20and%20I%27d%20like%20to%20discuss%20it."
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-primary">
 
-    Start on WhatsApp →
+Start on WhatsApp →
 
 </a>
 
 
 <a
-    href="#pricing"
-    class="btn btn-secondary">
+href="#package-finder"
+class="btn btn-secondary">
 
-    View Pricing
+Find My Package
 
 </a>
 
@@ -2912,7 +4329,6 @@ modern and responsive website.
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -2945,7 +4361,7 @@ needs an online presence? Contact me.
 <div class="contact-card reveal">
 
 <small>
-    Gmail
+Gmail
 </small>
 
 <a href="mailto:senprince023@gmail.com">
@@ -2957,17 +4373,16 @@ senprince023@gmail.com
 </div>
 
 
-
 <div class="contact-card reveal">
 
 <small>
-    WhatsApp
+WhatsApp
 </small>
 
 <a
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business."
-    target="_blank"
-    rel="noopener noreferrer">
+href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business."
+target="_blank"
+rel="noopener noreferrer">
 
 +91 74193 06032
 
@@ -2976,17 +4391,16 @@ senprince023@gmail.com
 </div>
 
 
-
 <div class="contact-card reveal">
 
 <small>
-    GitHub
+GitHub
 </small>
 
 <a
-    href="https://github.com/Princesain27"
-    target="_blank"
-    rel="noopener noreferrer">
+href="https://github.com/Princesain27"
+target="_blank"
+rel="noopener noreferrer">
 
 github.com/Princesain27
 
@@ -2995,19 +4409,18 @@ github.com/Princesain27
 </div>
 
 
-
 <div class="contact-card reveal">
 
 <small>
-    LinkedIn
+LinkedIn
 </small>
 
 <a
-    href="https://www.linkedin.com/in/prince-sen-031738323/"
-    target="_blank"
-    rel="noopener noreferrer">
+href="https://www.linkedin.com/in/prince-sen-031738323/"
+target="_blank"
+rel="noopener noreferrer">
 
-Prince sen
+Prince Sen
 
 </a>
 
@@ -3021,7 +4434,6 @@ Prince sen
 </section>
 
 
-
 <!-- =======================================================
      FOOTER
 ======================================================= -->
@@ -3033,11 +4445,11 @@ Prince sen
 <div class="footer-content">
 
 <div>
-    © 2026 Prince. All rights reserved.
+© 2026 Prince. All rights reserved.
 </div>
 
 <div>
-    Your Business, Better Online.
+Your Business, Better Online.
 </div>
 
 </div>
@@ -3047,22 +4459,20 @@ Prince sen
 </footer>
 
 
-
 <!-- =======================================================
-     FLOATING WHATSAPP
+     WHATSAPP
 ======================================================= -->
 
 <a
-    class="whatsapp-float"
-    href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website."
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat on WhatsApp">
+class="whatsapp-float"
+href="https://wa.me/917419306032?text=Hi%20Prince!%20I%27m%20interested%20in%20getting%20a%20website."
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat on WhatsApp">
 
-    ☎
+☎
 
 </a>
-
 
 
 <!-- =======================================================
@@ -3071,53 +4481,68 @@ Prince sen
 
 <script>
 
+
 /* =========================================================
    MOBILE MENU
 ========================================================= */
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const menuBtn =
+    document.getElementById("menuBtn");
 
-menuBtn.addEventListener("click", function () {
+const navLinks =
+    document.getElementById("navLinks");
 
-    navLinks.classList.toggle("active");
 
-    menuBtn.textContent =
-        navLinks.classList.contains("active")
+menuBtn.addEventListener(
+    "click",
+    function() {
+
+        navLinks.classList.toggle("active");
+
+        menuBtn.textContent =
+            navLinks.classList.contains("active")
             ? "✕"
             : "☰";
 
+    }
+);
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navLinks.classList.remove("active");
+
+            menuBtn.textContent = "☰";
+
+        }
+    );
+
 });
 
 
-document.querySelectorAll(".nav-links a").forEach(function(link) {
+document.addEventListener(
+    "click",
+    function(event) {
 
-    link.addEventListener("click", function() {
+        if (
+            !navLinks.contains(event.target) &&
+            !menuBtn.contains(event.target)
+        ) {
 
-        navLinks.classList.remove("active");
+            navLinks.classList.remove("active");
 
-        menuBtn.textContent = "☰";
+            menuBtn.textContent = "☰";
 
-    });
-
-});
-
-
-document.addEventListener("click", function(event) {
-
-    if (
-        !navLinks.contains(event.target) &&
-        !menuBtn.contains(event.target)
-    ) {
-
-        navLinks.classList.remove("active");
-
-        menuBtn.textContent = "☰";
+        }
 
     }
-
-});
-
+);
 
 
 /* =========================================================
@@ -3133,33 +4558,42 @@ const observer =
 
         function(entries) {
 
-            entries.forEach(function(entry) {
+            entries.forEach(
+                function(entry) {
 
-                if (entry.isIntersecting) {
+                    if (
+                        entry.isIntersecting
+                    ) {
 
-                    entry.target.classList.add("show");
+                        entry.target
+                            .classList
+                            .add("show");
 
-                    observer.unobserve(entry.target);
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
 
                 }
-
-            });
+            );
 
         },
 
         {
-            threshold: 0.12
+            threshold: .12
         }
 
     );
 
 
-revealElements.forEach(function(element) {
+revealElements.forEach(
+    function(element) {
 
-    observer.observe(element);
+        observer.observe(element);
 
-});
-
+    }
+);
 
 
 /* =========================================================
@@ -3167,80 +4601,533 @@ revealElements.forEach(function(element) {
 ========================================================= */
 
 const faqQuestions =
-    document.querySelectorAll(".faq-question");
+    document.querySelectorAll(
+        ".faq-question"
+    );
 
 
-faqQuestions.forEach(function(question) {
+faqQuestions.forEach(
+    function(question) {
 
-    question.addEventListener("click", function() {
+        question.addEventListener(
+            "click",
+            function() {
 
-        const currentItem =
-            question.parentElement;
-
-
-        document
-            .querySelectorAll(".faq-item")
-            .forEach(function(item) {
-
-                if (item !== currentItem) {
-
-                    item.classList.remove("active");
-
-                }
-
-            });
+                const currentItem =
+                    question.parentElement;
 
 
-        currentItem.classList.toggle("active");
+                document
+                .querySelectorAll(
+                    ".faq-item"
+                )
+                .forEach(
+                    function(item) {
 
-    });
+                        if (
+                            item !== currentItem
+                        ) {
 
-});
+                            item.classList
+                                .remove("active");
 
+                        }
+
+                    }
+                );
+
+
+                currentItem.classList
+                    .toggle("active");
+
+            }
+        );
+
+    }
+);
 
 
 /* =========================================================
    NAVBAR BACKGROUND
 ========================================================= */
 
-window.addEventListener("scroll", function() {
+window.addEventListener(
+    "scroll",
+    function() {
 
-    const header =
-        document.querySelector("header");
+        const header =
+            document.querySelector("header");
 
-    if (window.scrollY > 30) {
 
-        header.style.background =
-            "rgba(5,5,5,0.94)";
+        if (
+            window.scrollY > 30
+        ) {
 
-    } else {
+            header.style.background =
+                "rgba(5,5,5,.94)";
 
-        header.style.background =
-            "rgba(5,5,5,0.78)";
+        } else {
+
+            header.style.background =
+                "rgba(5,5,5,.78)";
+
+        }
 
     }
-
-});
-
+);
 
 
 /* =========================================================
-   CURRENT YEAR
+   PRICING CARD FLIP
 ========================================================= */
 
-const year =
-    new Date().getFullYear();
+document.querySelectorAll(".flip-trigger, .flip-back-btn")
+.forEach(function(button) {
 
-document
-    .querySelector("footer")
-    .innerHTML =
-    document
-        .querySelector("footer")
-        .innerHTML
-        .replace("2026", year);
+    button.addEventListener("click", function() {
+
+        const pkg = button.dataset.flipTarget;
+
+        const card = document.querySelector(
+            '.price-card[data-package="' + pkg + '"]'
+        );
+
+        if (card) {
+            card.classList.toggle("flipped");
+        }
+
+    });
+
+});
+
+function syncPricingCardHeights() {
+
+    const cards = document.querySelectorAll(".flip-card-inner");
+
+    if (!cards.length) return;
+
+    cards.forEach(function(inner) {
+        inner.style.minHeight = "0px";
+    });
+
+    let maxHeight = 0;
+
+    cards.forEach(function(inner) {
+
+        const front = inner.querySelector(".flip-card-front");
+        const back = inner.querySelector(".flip-card-back");
+
+        maxHeight = Math.max(
+            maxHeight,
+            front.scrollHeight,
+            back.scrollHeight
+        );
+
+    });
+
+    cards.forEach(function(inner) {
+        inner.style.minHeight = maxHeight + "px";
+    });
+
+}
+
+window.addEventListener("load", syncPricingCardHeights);
+
+let resizeTimer;
+
+window.addEventListener("resize", function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(syncPricingCardHeights, 150);
+});
+
+
+/* =========================================================
+   SMART PACKAGE FINDER
+========================================================= */
+
+const finderSteps = [
+    document.getElementById("step1"),
+    document.getElementById("step2"),
+    document.getElementById("step3")
+];
+
+const finderResult = document.getElementById("finderResult");
+
+let selectedBusiness = "";
+let selectedRequirements = [];
+let selectedGoals = [];
+
+const businessNames = {
+    portfolio: "Portfolio / Freelancer",
+    local: "Local Business",
+    gym: "Gym / Fitness",
+    restaurant: "Restaurant / Cafe",
+    salon: "Salon / Beauty",
+    realestate: "Real Estate",
+    education: "Education / Coaching",
+    agency: "Agency / Startup"
+};
+
+const requirementNames = {
+    customers: "More Customers",
+    whatsapp: "WhatsApp Inquiries",
+    services: "Services Showcase",
+    gallery: "Portfolio / Gallery",
+    contact: "Contact Form",
+    google: "Google / Online Presence",
+    pages: "Multiple Pages",
+    booking: "Booking / Appointment"
+};
+
+const goalNames = {
+    presence: "Basic Online Presence",
+    leads: "Leads / Inquiries",
+    brand: "Professional Brand",
+    advanced: "Advanced Business Website",
+    sales: "Increase Sales",
+    trust: "Build Trust"
+};
+
+/* ---------- STEP VISIBILITY ---------- */
+
+function showFinderStep(index) {
+    finderSteps.forEach(step => step.classList.remove("active"));
+    finderResult.classList.remove("show");
+
+    if (finderSteps[index]) {
+        finderSteps[index].classList.add("active");
+    }
+
+    document.querySelectorAll(".progress-item").forEach((item, i) => {
+        item.classList.toggle("active", i <= index);
+    });
+
+    document.getElementById("package-finder").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+/* ---------- STEP 1: BUSINESS ---------- */
+
+document.querySelectorAll("[data-business]").forEach(button => {
+    button.addEventListener("click", () => {
+        selectedBusiness = button.dataset.business;
+
+        document.querySelectorAll("[data-business]").forEach(item => {
+            item.classList.remove("selected");
+        });
+
+        button.classList.add("selected");
+
+        showFinderStep(1);
+    });
+});
+
+/* ---------- STEP 2: MULTI SELECT REQUIREMENTS ---------- */
+
+document.querySelectorAll("[data-requirement]").forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.dataset.requirement;
+
+        if (selectedRequirements.includes(value)) {
+            selectedRequirements = selectedRequirements.filter(item => item !== value);
+            button.classList.remove("selected");
+        } else {
+            selectedRequirements.push(value);
+            button.classList.add("selected");
+        }
+    });
+});
+
+document.getElementById("backToStep1").addEventListener("click", () => {
+    showFinderStep(0);
+});
+
+document.getElementById("toStep3").addEventListener("click", () => {
+    if (selectedRequirements.length === 0) {
+        alert("Please select at least one requirement.");
+        return;
+    }
+
+    showFinderStep(2);
+});
+
+/* ---------- STEP 3: MULTI SELECT GOALS ---------- */
+
+document.querySelectorAll("[data-goal]").forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.dataset.goal;
+
+        if (selectedGoals.includes(value)) {
+            selectedGoals = selectedGoals.filter(item => item !== value);
+            button.classList.remove("selected");
+        } else {
+            selectedGoals.push(value);
+            button.classList.add("selected");
+        }
+    });
+});
+
+document.getElementById("backToStep2").addEventListener("click", () => {
+    showFinderStep(1);
+});
+
+document.getElementById("showRecommendation").addEventListener("click", () => {
+    if (selectedGoals.length === 0) {
+        alert("Please select at least one website goal.");
+        return;
+    }
+
+    generateRecommendation();
+});
+
+/* ---------- RECOMMENDATION ENGINE ---------- */
+
+function generateRecommendation() {
+
+    let score = {
+        starter: 0,
+        business: 0,
+        professional: 0,
+        premium: 0
+    };
+
+    /* Business type scoring */
+    if (["portfolio"].includes(selectedBusiness)) score.starter += 3;
+    if (["local", "gym", "restaurant", "salon"].includes(selectedBusiness)) score.business += 3;
+    if (["realestate", "education"].includes(selectedBusiness)) score.professional += 3;
+    if (["agency"].includes(selectedBusiness)) score.premium += 3;
+
+    /* Requirement scoring */
+    selectedRequirements.forEach(req => {
+        if (["google", "whatsapp"].includes(req)) {
+            score.starter += 1;
+            score.business += 2;
+        }
+
+        if (["customers", "services", "contact", "booking"].includes(req)) {
+            score.business += 2;
+            score.professional += 1;
+        }
+
+        if (req === "gallery") {
+            score.business += 1;
+            score.professional += 2;
+        }
+
+        if (req === "pages") {
+            score.professional += 3;
+            score.premium += 2;
+        }
+    });
+
+    /* Goal scoring */
+    selectedGoals.forEach(goal => {
+        if (goal === "presence") score.starter += 2;
+        if (goal === "leads") {
+            score.business += 3;
+            score.professional += 2;
+        }
+        if (goal === "brand") {
+            score.professional += 3;
+            score.premium += 2;
+        }
+        if (goal === "advanced") {
+            score.premium += 5;
+            score.professional += 2;
+        }
+        if (goal === "sales") {
+            score.professional += 3;
+            score.premium += 2;
+        }
+        if (goal === "trust") {
+            score.business += 1;
+            score.professional += 2;
+        }
+    });
+
+    /* Requirement count naturally increases package level */
+    if (selectedRequirements.length >= 4) score.professional += 3;
+    if (selectedRequirements.length >= 6) score.premium += 3;
+
+    if (selectedGoals.length >= 3) score.professional += 2;
+    if (selectedGoals.includes("advanced")) score.premium += 4;
+
+    /* Hard rules for clearly advanced requirements */
+    if (selectedRequirements.includes("pages") &&
+        selectedRequirements.length >= 5) {
+        score.professional += 4;
+    }
+
+    /* Pick highest score */
+    const packageOrder = ["starter", "business", "professional", "premium"];
+
+    let recommended = packageOrder[0];
+
+    packageOrder.forEach(pkg => {
+        if (score[pkg] > score[recommended]) {
+            recommended = pkg;
+        }
+    });
+
+    const packages = {
+        starter: {
+            name: "Starter Website",
+            price: "₹2,999",
+            description:
+                "A clean, professional website for establishing a strong online presence without unnecessary complexity.",
+            reasons: [
+                "Clean professional UI",
+                "Mobile responsive design",
+                "WhatsApp / contact option",
+                "Fast online presence"
+            ]
+        },
+
+        business: {
+            name: "Business Website",
+            price: "₹6,999",
+            description:
+                "A professional business website designed to showcase your services, build trust and generate customer enquiries.",
+            reasons: [
+                "Professional business design",
+                "WhatsApp & enquiry flow",
+                "Services / gallery sections",
+                "Responsive customer-focused layout"
+            ]
+        },
+
+        professional: {
+            name: "Professional Website",
+            price: "₹12,999",
+            description:
+                "A stronger website for growing businesses that need more pages, branding and lead-focused sections.",
+            reasons: [
+                "Premium custom UI",
+                "Lead-generation sections",
+                "Multiple pages & content",
+                "SEO-ready structure"
+            ]
+        },
+
+        premium: {
+            name: "Premium Website",
+            price: "₹19,999",
+            description:
+                "A high-end custom website experience built around your brand, business goals and advanced requirements.",
+            reasons: [
+                "High-end custom UI/UX",
+                "Advanced interactions",
+                "Conversion-focused structure",
+                "Custom business functionality"
+            ]
+        }
+    };
+
+    const selectedPackage = packages[recommended];
+
+    document.getElementById("resultTitle").textContent = selectedPackage.name;
+    document.getElementById("resultPrice").textContent = selectedPackage.price;
+    document.getElementById("resultDescription").textContent = selectedPackage.description;
+
+    document.getElementById("reason1").textContent = selectedPackage.reasons[0];
+    document.getElementById("reason2").textContent = selectedPackage.reasons[1];
+    document.getElementById("reason3").textContent = selectedPackage.reasons[2];
+    document.getElementById("reason4").textContent = selectedPackage.reasons[3];
+
+    const business = businessNames[selectedBusiness] || "Business";
+    const requirements = selectedRequirements
+        .map(item => requirementNames[item])
+        .join(", ");
+
+    const goals = selectedGoals
+        .map(item => goalNames[item])
+        .join(", ");
+
+    document.getElementById("resultSummary").innerHTML =
+        "<strong>Business:</strong> " + escapeHTML(business) +
+        "<br><strong>Requirements:</strong> " + escapeHTML(requirements) +
+        "<br><strong>Goals:</strong> " + escapeHTML(goals);
+
+    /* Highlight recommended pricing card */
+    document.querySelectorAll(".price-card").forEach(card => {
+        card.classList.remove("recommended");
+    });
+
+    const recommendedCard =
+        document.querySelector('[data-package="' + recommended + '"]');
+
+    if (recommendedCard) {
+        recommendedCard.classList.add("recommended");
+    }
+
+    /* WhatsApp message */
+    const message =
+        "Hi Prince! I used your website package finder.\n\n" +
+        "Business: " + business + "\n\n" +
+        "Requirements:\n- " +
+        selectedRequirements.map(item => requirementNames[item]).join("\n- ") +
+        "\n\nGoals:\n- " +
+        selectedGoals.map(item => goalNames[item]).join("\n- ") +
+        "\n\nRecommended Package: " +
+        selectedPackage.name +
+        "\nPrice: " +
+        selectedPackage.price +
+        "\n\nI would like to discuss this package.";
+
+    document.getElementById("resultWhatsApp").href =
+        "https://wa.me/917419306032?text=" +
+        encodeURIComponent(message);
+
+    finderSteps.forEach(step => step.classList.remove("active"));
+
+    document.querySelectorAll(".progress-item").forEach(item => {
+        item.classList.add("active");
+    });
+
+    finderResult.classList.add("show");
+
+    document.getElementById("package-finder").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+/* Prevent HTML injection in the result summary */
+function escapeHTML(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+/* ---------- RESET ---------- */
+
+document.getElementById("restartFinder").addEventListener("click", () => {
+
+    selectedBusiness = "";
+    selectedRequirements = [];
+    selectedGoals = [];
+
+    document.querySelectorAll(".finder-option").forEach(option => {
+        option.classList.remove("selected");
+    });
+
+    document.querySelectorAll(".price-card").forEach(card => {
+        card.classList.remove("recommended");
+        card.classList.remove("flipped");
+    });
+
+    showFinderStep(0);
+});
+
 
 </script>
 
 
 </body>
+
 </html>
